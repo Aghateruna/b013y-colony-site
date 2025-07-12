@@ -2,70 +2,102 @@
 <html lang="id">
 <head>
   <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>B013Y COLONY</title>
-        <style>
-            body {
-                  background: #111;
-                        color: #eee;
-                              font-family: Arial, sans-serif;
-                                    margin: 0;
-                                          padding: 0;
-                                              }
-                                                  header {
-                                                        text-align: center;
-                                                              padding: 2rem;
-                                                                    background: #000;
-                                                                        }
-                                                                            h1 {
-                                                                                  color: #ffa500;
-                                                                                      }
-                                                                                          section {
-                                                                                                padding: 2rem;
-                                                                                                      max-width: 800px;
-                                                                                                            margin: auto;
-                                                                                                                }
-                                                                                                                    h2 {
-                                                                                                                          color: #ffa500;
-                                                                                                                              }
-                                                                                                                                  footer {
-                                                                                                                                        background: #000;
-                                                                                                                                              color: #888;
-                                                                                                                                                    text-align: center;
-                                                                                                                                                          padding: 1rem;
-                                                                                                                                                              }
-                                                                                                                                                                </style>
-                                                                                                                                                                </head>
-                                                                                                                                                                <body>
-                                                                                                                                                                  <header>
-                                                                                                                                                                      <h1>B013Y COLONY</h1>
-                                                                                                                                                                          <p>WELCOME TO OUR COLONY BASE</p>
-                                                                                                                                                                              <p><em>(terbendung - terbentur - terbentuk)</em></p>
-                                                                                                                                                                                  <h3>NO MERCY!! NO MERCY!! NO MERCY!!</h3>
-                                                                                                                                                                                    </header>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>B013Y COLONY</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: white;
+      background: url('https://raw.githubusercontent.com/Aghateruna/b013y-colony-site/main/logo.jpg') no-repeat center center fixed;
+      background-size: cover;
+      backdrop-filter: brightness(0.5);
+    }
 
-                                                                                                                                                                                      <section>
-                                                                                                                                                                                          <h2>B013Y SENTINEL</h2>
-                                                                                                                                                                                              <p>Divisi pengamanan (CPO & LPO)</p>
+    header, footer {
+      background-color: rgba(0, 0, 0, 0.8);
+      text-align: center;
+      padding: 1rem;
+    }
 
-                                                                                                                                                                                                  <h2>B013Y CORPS</h2>
-                                                                                                                                                                                                      <p>Narahubung & problem solver bisnis</p>
+    main {
+      max-width: 800px;
+      margin: auto;
+      padding: 2rem;
+      background-color: rgba(0, 0, 0, 0.6);
+      border-radius: 10px;
+    }
 
-                                                                                                                                                                                                          <h2>B013Y COLONIA</h2>
-                                                                                                                                                                                                              <p>Divisi jual beli produk</p>
+    h1, h2, h3 {
+      color: #FFA500;
+    }
 
-                                                                                                                                                                                                                  <h2>B013Y LAW</h2>
-                                                                                                                                                                                                                      <p>Divisi jasa hukum (litigasi & nonlitigasi)</p>
+    p {
+      line-height: 1.6;
+    }
 
-                                                                                                                                                                                                                          <h3>⚠ RULLES ATTENTION</h3>
-                                                                                                                                                                                                                              <p>Group bersifat monarki, menjunjung etika.</p>
+    .warning {
+      color: red;
+      font-weight: bold;
+    }
 
-                                                                                                                                                                                                                                  <h3>❗ WARNING</h3>
-                                                                                                                                                                                                                                      <p>Segala pelanggaran dipertimbangkan kecuali <strong>pengkhianatan</strong>.</p>
-                                                                                                                                                                                                                                        </section>
+    .contact {
+      margin-top: 2rem;
+      padding: 1rem;
+      background-color: rgba(255, 255, 255, 0.1);
+      border-left: 4px solid orange;
+    }
 
-                                                                                                                                                                                                                                          <footer>
-                                                                                                                                                                                                                                              &copy; 2021 - 2025 B013Y COLONY. All rights reserved.
-                                                                                                                                                                                                                                                </footer>
-                                                                                                                                                                                                                                                </body>
-                                                                                                                                                                                                                                                </html>
+    a {
+      color: #00ffff;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>B013Y COLONY</h1>
+    <p>WELCOME TO OUR COLONY BASE</p>
+    <em>(terbendung - terbentur - terbentuk)</em>
+    <h3>NO MERCY!! NO MERCY!! NO MERCY!!</h3>
+  </header>
+
+  <main>
+    <section>
+      <h2>B013Y SENTINEL</h2>
+      <p>Divisi pengamanan (CPO & LPO)</p>
+
+      <h2>B013Y CORPS</h2>
+      <p>Narahubung & problem solver bisnis</p>
+
+      <h2>B013Y COLONIA</h2>
+      <p>Divisi jual beli produk</p>
+
+      <h2>B013Y LAW</h2>
+      <p>Divisi jasa hukum (litigasi & nonlitigasi)</p>
+
+      <h3>⚠️ RULLES ATTENTION</h3>
+      <p>Group bersifat monarki, menjunjung etika.</p>
+
+      <h3 class="warning">❗ WARNING</h3>
+      <p>Segala pelanggaran dipertimbangkan kecuali <strong>pengkhianatan</strong>.</p>
+    </section>
+
+    <div class="contact">
+      <h3>📞 Contact Person</h3>
+      <p>WhatsApp: <a href="https://wa.me/628xxxxxxxxxx" target="_blank">+62 8xx xxxx xxx</a></p>
+      <p>Email: <a href="mailto:aghateruna12@gmail.com">aghateruna12@gmail.com</a></p>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2021 - 2025 B013Y COLONY. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
