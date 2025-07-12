@@ -8,152 +8,139 @@
   <style>
     * {
       box-sizing: border-box;
+      margin: 0;
+      padding: 0;
     }
 
     body {
-      margin: 0;
-      padding: 0;
       font-family: 'Orbitron', sans-serif;
       background: url('logo.jpg') no-repeat center center fixed;
       background-size: cover;
       color: #fff;
-    }
-
-    .layout {
-      display: flex;
-      flex-direction: row;
-      min-height: 100vh;
       background-color: rgba(0, 0, 0, 0.85);
     }
 
-    .sidebar {
-      flex: 0 0 120px;
-      background-color: rgba(255, 255, 255, 0.05);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding: 1rem;
-    }
-
-    .sidebar img {
-      max-width: 80px;
-      max-height: 80px;
-      border-radius: 10px;
-    }
-
-    .content {
-      flex: 1;
+    .container {
+      background-color: rgba(0, 0, 0, 0.8);
       padding: 2rem;
+    }
+
+    header {
       display: flex;
-      flex-direction: column;
       align-items: center;
+      gap: 1rem;
+      padding-bottom: 1rem;
+      border-bottom: 2px solid orange;
+    }
+
+    header img {
+      width: 60px;
+      height: 60px;
+      border-radius: 8px;
     }
 
     header h1 {
+      font-size: 1.8rem;
       color: orange;
-      font-size: 2.5rem;
-      text-align: center;
     }
 
-    header p {
-      font-style: italic;
-      text-align: center;
-      margin-bottom: 1rem;
-    }
-
-    .section, .contact, footer {
-      background-color: rgba(255,255,255,0.05);
+    section {
+      margin-top: 2rem;
       padding: 1.5rem;
-      border-radius: 12px;
-      width: 100%;
-      max-width: 900px;
-      margin-bottom: 2rem;
+      background-color: rgba(255, 255, 255, 0.05);
+      border-radius: 10px;
     }
 
-    .section h2, .contact h3 {
+    section h2 {
       color: orange;
-      margin-bottom: 0.5rem;
+      margin-top: 1rem;
     }
 
-    .section p {
+    section p {
       line-height: 1.6;
+      margin-bottom: 1rem;
     }
 
     .warning {
       color: red;
       font-weight: bold;
-      margin-top: 2rem;
-      font-size: 1.2rem;
+      margin-top: 1.5rem;
     }
 
     footer {
+      margin-top: 2rem;
       text-align: center;
-      font-size: 0.9rem;
       color: #aaa;
+      font-size: 0.9rem;
     }
 
-    @media (max-width: 768px) {
-      .layout {
-        flex-direction: column;
+    .contact {
+      margin-top: 1rem;
+      padding: 1rem;
+      background-color: rgba(255,255,255,0.05);
+      border-radius: 8px;
+    }
+
+    @media (min-width: 768px) {
+      header h1 {
+        font-size: 2.2rem;
       }
 
-      .sidebar {
-        flex: 0 0 auto;
-        padding: 1rem;
+      .container {
+        max-width: 900px;
+        margin: auto;
       }
     }
   </style>
 </head>
 <body>
-  <div class="layout">
-    <div class="sidebar">
-      <img src="logo.jpg" alt="B013Y Logo">
-    </div>
-    <div class="content">
-      <header>
-        <h1>B013Y COLONY</h1>
-        <p><strong>Group sarana komunikasi khusus keluarga besar</strong></p>
-        <p>est 2021 - 2025</p>
-        <h2>WELCOME TO OUR COLONY BASE</h2>
-        <p><em>(terbendung - terbentur - terbentuk)</em></p>
-        <h3>NO MERCY!! NO MERCY!! NO MERCY!!</h3>
-      </header>
+  <div class="container">
+    <header>
+      <img src="logo.jpg" alt="Logo B013Y">
+      <h1>B013Y COLONY</h1>
+    </header>
 
-      <div class="section">
-        <p>B013Y COLONY adalah sebuah wadah bagi berbagai macam organisasi komersil...</p>
+    <section>
+      <p><strong>Group sarana komunikasi khusus keluarga besar</strong></p>
+      <p>est 2021 - 2025</p>
+      <h2>WELCOME TO OUR COLONY BASE</h2>
+      <p><em>(terbendung - terbentur - terbentuk)</em></p>
+      <h3>NO MERCY!! NO MERCY!! NO MERCY!!</h3>
+      <br>
+      <p>B013Y COLONY adalah sebuah wadah bagi berbagai macam organisasi komersil...</p>
 
-        <h2>B013 SENTINEL</h2>
-        <p>Divisi jasa pengamanan dengan sistem ring & keahlian (CPO & LPO).</p>
+      <h2>B013 SENTINEL</h2>
+      <p>Divisi jasa pengamanan dan pengawalan (CPO & LPO).</p>
 
-        <h2>B013Y CORPS</h2>
-        <p>Narahubung & problem solver bagi bisnis yang bermasalah dengan lembaga.</p>
+      <h2>B013Y CORPS</h2>
+      <p>Divisi narahubung & problem solver untuk pembisnis.</p>
 
-        <h2>B013Y COLONIA</h2>
-        <p>Divisi perdagangan dengan sistem objektif dan terstruktur.</p>
+      <h2>B013Y COLONIA</h2>
+      <p>Divisi jual beli produk dengan sistem objektif.</p>
 
-        <h2>B013Y LAW</h2>
-        <p>Divisi layanan hukum (litigasi, nonlitigasi, konsultasi, kontrol sosial hukum).</p>
+      <h2>B013Y LAW</h2>
+      <p>Divisi jasa hukum: Litigasi, Nonlitigasi, sosial kontrol.</p>
 
-        <h2>RULLES ATTENTION</h2>
-        <p>Group Monarki menjunjung etika, hirarki, dan norma kelompok.</p>
+      <h2>RULLES ATTENTION</h2>
+      <p>Group Monarki: hirarki, senioritas, etika, estetika.</p>
 
-        <div class="warning">
-          *WARNING!!!*<br>
-          Segala bentuk pelanggaran dapat dipertimbangkan kecuali <strong>PENGKHIANATAN</strong><br>
-          <em>every violations are considered except BETRAYAL</em>
-        </div>
+      <div class="warning">
+        ⚠️ WARNING!!!<br>
+        Segala bentuk pelanggaran dapat dipertimbangkan<br>
+        kecuali <strong>PENGKHIANATAN</strong><br>
+        <em>every violations are considered except BETRAYAL</em>
       </div>
+    </section>
 
-      <div class="contact">
-        <h3>📞 KONTAK</h3>
-        <p>📧 Email: <strong>aghateruna12@gmail.com</strong></p>
-        <p>📱 WhatsApp: <strong>+62 812-XXXX-XXXX</strong></p>
-      </div>
-
-      <footer>
-        <p>© 2021 - 2025 B013Y COLONY. All rights reserved.</p>
-      </footer>
+    <div class="contact">
+      <h2>📞 KONTAK</h2>
+      <p>Email: aghateruna12@gmail.com</p>
+      <p>WhatsApp: +62 812-XXXX-XXXX</p>
     </div>
+
+    <footer>
+      © 2021 - 2025 B013Y COLONY. All rights reserved.
+    </footer>
   </div>
 </body>
 </html>
