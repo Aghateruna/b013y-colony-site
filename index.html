@@ -2,73 +2,95 @@
 <html lang="id">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>B013Y COLONY</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
-      color: white;
-      background: url('https://raw.githubusercontent.com/Aghateruna/b013y-colony-site/main/logo.jpg') no-repeat center center fixed;
+      padding: 0;
+      font-family: 'Orbitron', sans-serif;
+      background: url('logo.jpg') no-repeat center center fixed;
       background-size: cover;
-      backdrop-filter: brightness(0.5);
+      color: #fff;
     }
 
-    header, footer {
+    .overlay {
       background-color: rgba(0, 0, 0, 0.8);
-      text-align: center;
-      padding: 1rem;
-    }
-
-    main {
-      max-width: 800px;
-      margin: auto;
+      min-height: 100vh;
       padding: 2rem;
-      background-color: rgba(0, 0, 0, 0.6);
-      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
 
-    h1, h2, h3 {
-      color: #FFA500;
+    header h1 {
+      color: orange;
+      font-size: 2.5rem;
+      text-align: center;
     }
 
-    p {
-      line-height: 1.6;
+    header p {
+      font-style: italic;
+      text-align: center;
+      margin-bottom: 1rem;
     }
 
-    .warning {
-      color: red;
-      font-weight: bold;
+    .section {
+      background-color: rgba(255,255,255,0.05);
+      padding: 1.5rem;
+      border-radius: 12px;
+      width: 100%;
+      max-width: 800px;
+      margin-bottom: 2rem;
+    }
+
+    .section h2 {
+      color: orange;
+      margin-bottom: 0.5rem;
+    }
+
+    .section p {
+      margin: 0.3rem 0;
+    }
+
+    footer {
+      margin-top: auto;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #aaa;
     }
 
     .contact {
-      margin-top: 2rem;
+      background: rgba(255,255,255,0.05);
       padding: 1rem;
-      background-color: rgba(255, 255, 255, 0.1);
-      border-left: 4px solid orange;
+      border-radius: 12px;
+      max-width: 800px;
+      width: 100%;
     }
 
-    a {
-      color: #00ffff;
-      text-decoration: none;
+    .contact h3 {
+      color: orange;
     }
 
-    a:hover {
-      text-decoration: underline;
+    .contact p {
+      margin: 0.3rem 0;
+    }
+
+    @media (min-width: 768px) {
+      header h1 { font-size: 3rem; }
     }
   </style>
 </head>
 <body>
+  <div class="overlay">
+    <header>
+      <h1>B013Y COLONY</h1>
+      <p>WELCOME TO OUR COLONY BASE<br><em>(terbendung - terbentur - terbentuk)</em></p>
+      <h2>NO MERCY!! NO MERCY!! NO MERCY!!</h2>
+    </header>
 
-  <header>
-    <h1>B013Y COLONY</h1>
-    <p>WELCOME TO OUR COLONY BASE</p>
-    <em>(terbendung - terbentur - terbentuk)</em>
-    <h3>NO MERCY!! NO MERCY!! NO MERCY!!</h3>
-  </header>
-
-  <main>
-    <section>
+    <div class="section">
       <h2>B013Y SENTINEL</h2>
       <p>Divisi pengamanan (CPO & LPO)</p>
 
@@ -80,24 +102,18 @@
 
       <h2>B013Y LAW</h2>
       <p>Divisi jasa hukum (litigasi & nonlitigasi)</p>
-
-      <h3>⚠️ RULLES ATTENTION</h3>
-      <p>Group bersifat monarki, menjunjung etika.</p>
-
-      <h3 class="warning">❗ WARNING</h3>
-      <p>Segala pelanggaran dipertimbangkan kecuali <strong>pengkhianatan</strong>.</p>
-    </section>
-
-    <div class="contact">
-      <h3>📞 Contact Person</h3>
-      <p>WhatsApp: <a href="https://wa.me/628xxxxxxxxxx" target="_blank">+62 8xx xxxx xxx</a></p>
-      <p>Email: <a href="mailto:aghateruna12@gmail.com">aghateruna12@gmail.com</a></p>
     </div>
-  </main>
 
-  <footer>
-    <p>© 2021 - 2025 B013Y COLONY. All rights reserved.</p>
-  </footer>
+    <div class="section contact">
+      <h3>📞 KONTAK</h3>
+      <p>📧 Email: <strong>aghateruna12@gmail.com</strong></p>
+      <p>📱 WhatsApp: <strong>+62 812-XXXX-XXXX</strong></p>
+      <p>📍 Lokasi: <strong>Bandung, Indonesia</strong></p>
+    </div>
 
+    <footer>
+      © 2021 - 2025 B013Y COLONY. All rights reserved.
+    </footer>
+  </div>
 </body>
 </html>
