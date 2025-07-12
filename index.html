@@ -6,6 +6,10 @@
   <title>B013Y COLONY</title>
   <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       margin: 0;
       padding: 0;
@@ -15,9 +19,30 @@
       color: #fff;
     }
 
-    .overlay {
-      background-color: rgba(0, 0, 0, 0.8);
+    .layout {
+      display: flex;
+      flex-direction: row;
       min-height: 100vh;
+      background-color: rgba(0, 0, 0, 0.85);
+    }
+
+    .sidebar {
+      flex: 0 0 120px;
+      background-color: rgba(255, 255, 255, 0.05);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 1rem;
+    }
+
+    .sidebar img {
+      max-width: 80px;
+      max-height: 80px;
+      border-radius: 10px;
+    }
+
+    .content {
+      flex: 1;
       padding: 2rem;
       display: flex;
       flex-direction: column;
@@ -36,7 +61,7 @@
       margin-bottom: 1rem;
     }
 
-    .section {
+    .section, .contact, footer {
       background-color: rgba(255,255,255,0.05);
       padding: 1.5rem;
       border-radius: 12px;
@@ -45,27 +70,13 @@
       margin-bottom: 2rem;
     }
 
-    .section h2 {
+    .section h2, .contact h3 {
       color: orange;
       margin-bottom: 0.5rem;
     }
 
     .section p {
-      margin: 0.5rem 0;
       line-height: 1.6;
-    }
-
-    .contact, footer {
-      background: rgba(255,255,255,0.05);
-      padding: 1rem;
-      border-radius: 12px;
-      max-width: 900px;
-      width: 100%;
-      text-align: center;
-    }
-
-    .contact h3 {
-      color: orange;
     }
 
     .warning {
@@ -75,60 +86,74 @@
       font-size: 1.2rem;
     }
 
-    @media (min-width: 768px) {
-      header h1 { font-size: 3rem; }
+    footer {
+      text-align: center;
+      font-size: 0.9rem;
+      color: #aaa;
+    }
+
+    @media (max-width: 768px) {
+      .layout {
+        flex-direction: column;
+      }
+
+      .sidebar {
+        flex: 0 0 auto;
+        padding: 1rem;
+      }
     }
   </style>
 </head>
 <body>
-  <div class="overlay">
-    <header>
-      <h1>B013Y COLONY</h1>
-      <p><strong>Group sarana komunikasi khusus keluarga besar</strong></p>
-      <p>est 2021 - 2025</p>
-      <h2>WELCOME TO OUR COLONY BASE</h2>
-      <p><em>(terbendung - terbentur - terbentuk)</em></p>
-      <h3>NO MERCY!! NO MERCY!! NO MERCY!!</h3>
-    </header>
+  <div class="layout">
+    <div class="sidebar">
+      <img src="logo.jpg" alt="B013Y Logo">
+    </div>
+    <div class="content">
+      <header>
+        <h1>B013Y COLONY</h1>
+        <p><strong>Group sarana komunikasi khusus keluarga besar</strong></p>
+        <p>est 2021 - 2025</p>
+        <h2>WELCOME TO OUR COLONY BASE</h2>
+        <p><em>(terbendung - terbentur - terbentuk)</em></p>
+        <h3>NO MERCY!! NO MERCY!! NO MERCY!!</h3>
+      </header>
 
-    <div class="section">
-      <p>B013Y COLONY adalah sebuah wadah bagi berbagai macam organisasi komersil dengan sistem hierarki sebagai dasar regulasi yang menaungi berbagai macam divisi dalam beberapa jenis karakter bisnis, diantaranya:</p>
+      <div class="section">
+        <p>B013Y COLONY adalah sebuah wadah bagi berbagai macam organisasi komersil...</p>
 
-      <h2>B013 SENTINEL</h2>
-      <p>Adalah salasatu divisi yang menyediakan jasa pengamanan dan pengawalan pribadi dengan ragam intensitas standard - VVIP seperti jenis pam (pengamanan) yang memerlukan ring floating controls (ring I, ring II, ring III) serta personil yang memiliki beragam keahlian khusus yang terbagi pada dua unit untuk pengamanan range control terpisah:</p>
-      <ul>
-        <li><strong>CPO</strong> : <em>Close Protection Officer</em></li>
-        <li><strong>LPO</strong> : <em>Long Preventer Officer</em></li>
-      </ul>
+        <h2>B013 SENTINEL</h2>
+        <p>Divisi jasa pengamanan dengan sistem ring & keahlian (CPO & LPO).</p>
 
-      <h2>B013Y CORPS</h2>
-      <p>Adalah salasatu divisi yang berfungsi untuk menjadi narahubung dan problem solver bagi para pembisnis di luar sana yang dalam praktiknya kerap bermasalah dengan berbagai macam organisasi, lembaga hingga instansi.</p>
+        <h2>B013Y CORPS</h2>
+        <p>Narahubung & problem solver bagi bisnis yang bermasalah dengan lembaga.</p>
 
-      <h2>B013Y COLONIA</h2>
-      <p>Adalah salasatu divisi bisnis dengan sistem organigram yang terstruktur dan bersifat objektif karena divisi ini berfokus kepada jual beli produk yang digagas.</p>
+        <h2>B013Y COLONIA</h2>
+        <p>Divisi perdagangan dengan sistem objektif dan terstruktur.</p>
 
-      <h2>B013Y LAW</h2>
-      <p>Adalah salasatu divisi hukum yang menyediakan berbagai macam jasa hukum seperti pendampingan hukum baik dalam tahap Litigasi maupun Nonlitigasi, konsultasi hukum pidana/perdata, penanganan hukum maupun sosial kontrol terhadap penegakan hukum di semua ranah.</p>
+        <h2>B013Y LAW</h2>
+        <p>Divisi layanan hukum (litigasi, nonlitigasi, konsultasi, kontrol sosial hukum).</p>
 
-      <h2>RULLES ATTENTION</h2>
-      <p>Group bersifat <strong>Monarki</strong> yang menerapkan aturan hirarki dan senioritas dalam aktivitas ruang lingkup berkelompok serta menjunjung tinggi norma etika dan estetika sehingga menjadikan anggota yang beradab dan berbudi luhur.</p>
+        <h2>RULLES ATTENTION</h2>
+        <p>Group Monarki menjunjung etika, hirarki, dan norma kelompok.</p>
 
-      <div class="warning">
-        *WARNING!!!*<br>
-        Segala bentuk pelanggaran dapat dipertimbangkan kecuali <strong>PENGKHIANATAN</strong><br>
-        <em>every violations are considered except BETRAYAL</em>
+        <div class="warning">
+          *WARNING!!!*<br>
+          Segala bentuk pelanggaran dapat dipertimbangkan kecuali <strong>PENGKHIANATAN</strong><br>
+          <em>every violations are considered except BETRAYAL</em>
+        </div>
       </div>
-    </div>
 
-    <div class="contact">
-      <h3>📞 KONTAK</h3>
-      <p>📧 Email: <strong>aghateruna12@gmail.com</strong></p>
-      <p>📱 WhatsApp: <strong>+62 812-XXXX-XXXX</strong></p>
-    </div>
+      <div class="contact">
+        <h3>📞 KONTAK</h3>
+        <p>📧 Email: <strong>aghateruna12@gmail.com</strong></p>
+        <p>📱 WhatsApp: <strong>+62 812-XXXX-XXXX</strong></p>
+      </div>
 
-    <footer>
-      <p>© 2021 - 2025 B013Y COLONY. All rights reserved.</p>
-    </footer>
+      <footer>
+        <p>© 2021 - 2025 B013Y COLONY. All rights reserved.</p>
+      </footer>
+    </div>
   </div>
 </body>
 </html>
