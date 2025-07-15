@@ -194,12 +194,27 @@
     <section id="kontak" class="section">
       <h2>✉️ Hubungi Kami</h2>
       <p>Isi formulir di bawah atau klik tombol WhatsApp untuk kontak langsung.</p>
-      <form action="https://formspree.io/f/your_form_id" method="POST">
-        <input type="text" name="nama" placeholder="Nama" required>
-        <input type="email" name="email" placeholder="Email" required>
-        <textarea name="pesan" placeholder="Pesan..." required></textarea>
-        <button type="submit">Kirim Pesan</button>
-      </form>
+      <form id="whatsapp-form">
+  <input type="text" id="name" placeholder="Nama" required>
+  <input type="email" id="email" placeholder="Email" required>
+  <textarea id="message" placeholder="Pesan..." required></textarea>
+  <button type="submit">Kirim Pesan</button>
+</form>
+
+<script>
+  document.getElementById('whatsapp-form').addEventListener('submit', function (e) {
+    e.preventDefault();
+    const name = document.getElementById('name').value.trim();
+    const email = document.getElementById('email').value.trim();
+    const message = document.getElementById('message').value.trim();
+
+    const whatsappNumber = '62895621418160';
+    const text = `Halo, saya ingin menghubungi B013Y COLONY\n\nNama: ${name}\nEmail: ${email}\nPesan:\n${message}`;
+
+    const url = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(text)}`;
+    window.open(url, '_blank');
+  });
+</script>
       <br>
       <p>Atau scan QR untuk WhatsApp:</p>
       <img src="https://api.qrserver.com/v1/create-qr-code/?data=https://wa.me/62895621418160&size=150x150" alt="QR WhatsApp">
